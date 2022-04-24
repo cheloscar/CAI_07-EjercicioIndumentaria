@@ -1,7 +1,6 @@
 ﻿using System;
-using CAI_07Indumentaria.Dominio.ClasificacionIndumentaria;
 
-namespace CAI_07Indumentaria.Dominio
+namespace CAI_07_Indumentaria.Dominio
 {
     public abstract class Indumentaria
     {
@@ -43,14 +42,26 @@ namespace CAI_07Indumentaria.Dominio
         #endregion
 
         #region Métodos
+        /// <summary>
+        /// Sobreescritura del método para devolver información precisa
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return ("Soy Indumentaria del tipo: " + _tipoIndumentaria + ", con el código: " + _codigo) ;
         }
-        public override bool Equals(object obj)
+        /// <summary>
+        /// Sobreescritura del método para hacer una comparación precisa acorde al modelo
+        /// </summary>
+        /// <param name="objIngresado"></param>
+        /// <returns></returns>
+        public override bool Equals(object objIngresado)
         {
-            return base.Equals(obj);
+            if (objIngresado == null || objIngresado.GetType() != typeof(Indumentaria)) { return false; }
+
+            if (((Indumentaria)objIngresado)._codigo == this._codigo) { return true; } else { return false; }
         }
+        public abstract string GetDetalle();
         #endregion
     }
 }

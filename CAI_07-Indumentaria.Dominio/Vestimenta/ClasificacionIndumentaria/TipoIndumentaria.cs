@@ -1,5 +1,6 @@
 ﻿using System;
-namespace CAI_07Indumentaria.Dominio.ClasificacionIndumentaria
+
+namespace CAI_07_Indumentaria.Dominio
 {
     public abstract class TipoIndumentaria
     {
