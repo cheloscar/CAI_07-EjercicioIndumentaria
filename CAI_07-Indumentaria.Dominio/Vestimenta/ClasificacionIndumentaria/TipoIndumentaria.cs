@@ -33,7 +33,7 @@ namespace CAI_07_Indumentaria.Dominio
         #region Métodos
         public override string ToString()
         {
-            return "Soy la clase abstracta TipoIndumentaria";
+            return "TipoIndumentaria (abstracta)";
         }
         public string GetDetalle()
         {

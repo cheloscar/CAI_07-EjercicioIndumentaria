@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CAI_07_Indumentaria.Dominio
 {
-    internal class Cliente
+    public class Cliente
     {
         #region Variables
         private uint _codigo;

@@ -9,6 +9,9 @@ namespace CAI_07_Indumentaria.Dominio
         public TipoIndumentariaDeportiva(string origen, double porcentajeAlgodon) : base(origen, porcentajeAlgodon)
 		{
 		}
-		
-	}
+        public override string ToString()
+        {
+            return "Indumentaria Deportiva";
+        }
+    }
 }

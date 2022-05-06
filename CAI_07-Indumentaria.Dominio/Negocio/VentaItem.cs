@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CAI_07_Indumentaria.Dominio
 {
-    internal class VentaItem
+    public class VentaItem
     { 
         Indumentaria _prenda;
         uint _cantidad;

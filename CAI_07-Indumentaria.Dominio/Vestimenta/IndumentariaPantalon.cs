@@ -31,7 +31,14 @@ namespace CAI_07_Indumentaria.Dominio
         {
             return "Detalles de la prenda: ";
         }
-
+        /// <summary>
+        /// Sobreescritura del método para devolver información precisa
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return ("Soy Indumentaria Pantalón con el tipo: " + _tipoIndumentaria + ", con el código: " + _codigo);
+        }
         #endregion
     }
 }

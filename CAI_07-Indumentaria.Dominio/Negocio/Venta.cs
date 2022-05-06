@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CAI_07_Indumentaria.Dominio
 {
-    internal class Venta
+    public class Venta
     {
         #region Variables
         List<VentaItem> _items;
@@ -17,15 +17,15 @@ namespace CAI_07_Indumentaria.Dominio
         #endregion
 
         #region Propiedades
-        public global::System.Int32 Estado { get => _estado; set => _estado = value; }
-        public global::System.Int32 Codigo { get => _codigo; set => _codigo = value; }
+        public int Estado { get => _estado; set => _estado = value; }
+        public int Codigo { get => _codigo; set => _codigo = value; }
         internal Cliente Cliente { get => _cliente; set => _cliente = value; }
         internal List<VentaItem> Items1 { get => _items; set => _items = value; }
 
         #endregion
 
         #region Constructores
-        public Venta(List<VentaItem> items, Cliente cliente, global::System.Int32 estado, global::System.Int32 codigo)
+        public Venta(List<VentaItem> items, Cliente cliente, int estado, int codigo)
         {
             Items1 = items;
             this._cliente = cliente;

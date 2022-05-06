@@ -31,9 +31,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Excepciones\CantidadCeroException.cs" />
+    <Compile Include="Excepciones\TipoVacioException.cs" />
     <Compile Include="Excepciones\PedidoVacioException.cs" />
     <Compile Include="Excepciones\PrecioNegativoExcepcion.cs" />
     <Compile Include="Excepciones\SinStockException.cs" />
+    <Compile Include="Negocio\Enums\EstadoVenta.cs" />
     <Compile Include="Vestimenta\Indumentaria.cs" />
     <Compile Include="Vestimenta\IndumentariaPantalon.cs" />
     <Compile Include="Negocio\Cliente.cs" />

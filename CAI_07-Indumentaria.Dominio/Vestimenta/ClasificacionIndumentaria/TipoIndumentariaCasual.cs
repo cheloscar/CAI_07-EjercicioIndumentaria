@@ -10,5 +10,9 @@ namespace CAI_07_Indumentaria.Dominio
         public TipoIndumentariaCasual(string origen, double porcentajeAlgodon) : base(origen, porcentajeAlgodon)
         {
         }
+        public override string ToString()
+        {
+            return "Indumentaria Casual";
+        }
     }
 }

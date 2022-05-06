@@ -48,7 +48,7 @@ namespace CAI_07_Indumentaria.Dominio
         /// <returns></returns>
         public override string ToString()
         {
-            return ("Soy Indumentaria del tipo: " + _tipoIndumentaria + ", con el código: " + _codigo) ;
+            return ("Soy Indumentaria (abstracta) con el tipo: " + _tipoIndumentaria + ", con el código: " + _codigo) ;
         }
         /// <summary>
         /// Sobreescritura del método para hacer una comparación precisa acorde al modelo
